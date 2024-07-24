@@ -1,0 +1,134 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+  /* Navigation Bar */
+
+.nav {
+    background-color: #333;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo p {
+    margin-bottom: 0.5em;
+}
+
+.logo p a {
+    color: #ff0000; /* Change the color of "UwU Jurnal" to red */
+}
+
+.right-links {
+    display: flex;
+    align-items: center;
+}
+
+.right-links a {
+    margin-left: 1em;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3e8e41;
+}
+
+  /* Main Box */
+
+  .main-box {
+    display: flex; /* Flexbox layout for easy alignment */
+    margin: 20px; /* Margin around the main content */
+}
+
+.left {
+    width: 200px; /* Fixed width for the sidebar */
+    margin-right: 20px; /* Space between sidebar and main content */
+}
+
+.left .box {
+    background: #fff; /* White background for the boxes */
+    border: 1px solid #ddd; /* Light border for the boxes */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between boxes */
+    text-align: center; /* Center text inside the boxes */
+    transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.left .box a {
+    display: block; /* Make the entire box clickable */
+    padding: 15px; /* Padding inside the boxes */
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+    font-size: 18px; /* Font size for the links */
+    transition: color 0.3s; /* Smooth transition for link hover effect */
+}
+
+.left .box a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.left .box:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.right {
+    flex: 1; /* Take up remaining space in the flex container */
+    background: #fff; /* Background color */
+    padding: 20px; /* Padding inside the main content area */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.box {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.box a:hover {
+    color: #23527c;
+}
+
+.bottom {
+    flex-basis: 100%;
+    padding: 2em;
+}
+
+.bottom p {
+    font-size: 1.2em;
+    color: #666;
+}

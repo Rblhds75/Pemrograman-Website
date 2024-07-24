@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/add.css">
+    <title>Create User</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box form-box">
+            <header>Create User</header>
+            <form action="create_user.php" method="post">
+                <div class="field input">
+                    <label for="namapengguna">Username</label>
+                    <input type="text" name="namapengguna" id="namapengguna" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="katasandi">Password</label>
+                    <input type="password" name="katasandi" id="katasandi" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="peran">Role</label>
+                    <select name="peran" id="peran" required>
+                        <option value="User">User</option>
+                        <option value="Admin">Admin</option>
+                        <!-- Add other roles as needed -->
+                    </select>
+                </div>
+
+                <div class="field">
+                    <input type="submit" class="btn" name="submit" value="Create User">
+                </div>
+                <div class="links">
+                    <a href="admin.php">Dashboard admin</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
